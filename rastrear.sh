@@ -11,7 +11,7 @@ fi
 
 echo "Rastreando "$codigo
 
-response=$(curl -X GET -G 'https://rastreamento.correios.com.br/app/resultado.php' \
+response=$(curl -s -X GET -G 'https://rastreamento.correios.com.br/app/resultado.php' \
 -d objeto=$codigo \
 -d mqs=S)
 
